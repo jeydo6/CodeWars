@@ -8,7 +8,7 @@ namespace CodeWars
 		static void Main()
 		{
 			var json = JsonConvert.SerializeObject(
-				SimplisticTCP.TCP.TraverseStates(new[] { "APP_PASSIVE_OPEN", "RCV_SYN", "RCV_ACK", "APP_CLOSE", "APP_SEND" })
+				LastDigitOfHugeNumber.Kata.LastDigit(new int[] { 82242, 254719, 736371 })
 			);
 			Console.WriteLine(json);
 		}
