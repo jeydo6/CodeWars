@@ -27,10 +27,10 @@ namespace CodeWars.SimplisticTCP
 			{
 				if (_edges.ContainsKey(item))
 				{
-					var vertex = Array.Find(_edges[item], v => v.From == state);
-					if (vertex != default)
+					var edge = Array.Find(_edges[item], v => v.From == state);
+					if (edge != default)
 					{
-						state = vertex.To;
+						state = edge.To;
 					}
 					else
 					{
