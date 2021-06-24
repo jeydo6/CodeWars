@@ -8,7 +8,7 @@ namespace CodeWars
 		static void Main()
 		{
 			var json = JsonConvert.SerializeObject(
-				LastDigitOfHugeNumber.Kata.LastDigit(new int[] { 82242, 254719, 736371 })
+				Permutations.Kata.SinglePermutations("abc")
 			);
 			Console.WriteLine(json);
 		}
