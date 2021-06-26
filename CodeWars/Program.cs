@@ -8,7 +8,7 @@ namespace CodeWars
 		static void Main()
 		{
 			var json = JsonConvert.SerializeObject(
-				Permutations.Kata.SinglePermutations("abc")
+				RangeExtraction.Kata.Extract(new[] { 1, 2 })
 			);
 			Console.WriteLine(json);
 		}
