@@ -8,7 +8,7 @@ namespace CodeWars
 		static void Main()
 		{
 			var json = JsonConvert.SerializeObject(
-				DirectionsReduction.Kata.DirReduc(new string[] { "NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH", "WEST" })
+				PersistentBugger.Kata.Persistence(999)
 			);
 			Console.WriteLine(json);
 		}
