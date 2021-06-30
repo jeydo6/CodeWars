@@ -8,7 +8,9 @@ namespace CodeWars
 		static void Main()
 		{
 			var json = JsonConvert.SerializeObject(
-				PersistentBugger.Kata.Persistence(999)
+				//GameOfLife.Kata.GetGeneration(new int[,] { { 1, 0, 0 }, { 0, 1, 1 }, { 1, 1, 0 } }, 4)
+				//GameOfLife.Kata.GetGeneration(new int[,] { }, 4)
+				GameOfLife.Kata.GetGeneration(new int[,] { { 0, 0, 0, 1, 1, 1, 0, 1 }, { 0, 1, 1, 1, 1, 1, 1, 0 }, { 1, 0, 1, 1, 1, 0, 0, 0 } }, 4)
 			);
 			Console.WriteLine(json);
 		}
