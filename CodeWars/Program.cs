@@ -8,7 +8,9 @@ namespace CodeWars
 		static void Main()
 		{
 			var json = JsonConvert.SerializeObject(
-				NarcissisticNumber.Kata.Narcissistic(153)
+				PathFinder.Kata1.PathFinder(".W.\n" +
+				   ".W.\n" +
+				   "...")
 			);
 			Console.WriteLine(json);
 		}

@@ -5,11 +5,11 @@ namespace CodeWars.BurrowsWheelerTransformation
 {
 	public class Kata
 	{
-		public static Tuple<string, int> Encode(string s)
+		public static (string Word, int Index) Encode(string s)
 		{
 			if (s.Length == 0)
 			{
-				return new Tuple<string, int>("", 0);
+				return ("", 0);
 			}
 
 			var words = new string[s.Length];
@@ -28,7 +28,7 @@ namespace CodeWars.BurrowsWheelerTransformation
 
 			var index = Array.FindIndex(words, w => w == s);
 
-			return new Tuple<string, int>(word, index);
+			return (word, index);
 		}
 
 		public static string Decode(string s, int i)
