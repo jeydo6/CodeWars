@@ -8,9 +8,7 @@ namespace CodeWars
 		static void Main()
 		{
 			var json = JsonConvert.SerializeObject(
-				PathFinder.Kata1.PathFinder(".W.\n" +
-				   ".W.\n" +
-				   "...")
+				TortoiseRaicing.Kata.Race(720, 850, 70)
 			);
 			Console.WriteLine(json);
 		}

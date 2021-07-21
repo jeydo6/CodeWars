@@ -1,5 +1,4 @@
 ﻿using System.Linq;
-using System.Numerics;
 
 namespace CodeWars.PathFinder
 {
@@ -30,39 +29,6 @@ namespace CodeWars.PathFinder
 						PathFinder(maze, x, y - 1)
 					)
 				);
-		}
-
-		public static BigInteger fib(int n)
-		{
-			BigInteger t;
-			BigInteger s = 1;
-			BigInteger i = 1;
-			BigInteger j = 0;
-			BigInteger k = 0;
-			BigInteger h = 1;
-
-			if (n < 0)
-			{
-				n *= -1;
-				s = n % 2 == 0 ? -1 : 1;
-			}
-
-			while (n > 0)
-			{
-
-				if (n % 2 != 0)
-				{
-					t = j * h;
-					j = i * h + j * k + t;
-					i = i * k + t;
-				}
-				t = h * h;
-				h = 2 * k * h + t;
-				k = k * k + t;
-				n /= 2;
-			}
-
-			return j * s;
 		}
 	}
 }
