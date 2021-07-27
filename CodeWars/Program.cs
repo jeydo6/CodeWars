@@ -8,7 +8,7 @@ namespace CodeWars
 		static void Main()
 		{
 			var json = JsonConvert.SerializeObject(
-				""
+				IPFromUInt32.Kata.UInt32ToIP(2149583361)
 			);
 			Console.WriteLine(json);
 		}
